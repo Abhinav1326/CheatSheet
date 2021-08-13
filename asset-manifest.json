@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Cheatsheet/static/css/main.55093013.chunk.css",
+    "main.js": "/Cheatsheet/static/js/main.3ffdacb4.chunk.js",
+    "main.js.map": "/Cheatsheet/static/js/main.3ffdacb4.chunk.js.map",
+    "runtime-main.js": "/Cheatsheet/static/js/runtime-main.fd7be73b.js",
+    "runtime-main.js.map": "/Cheatsheet/static/js/runtime-main.fd7be73b.js.map",
+    "static/js/2.be121ff8.chunk.js": "/Cheatsheet/static/js/2.be121ff8.chunk.js",
+    "static/js/2.be121ff8.chunk.js.map": "/Cheatsheet/static/js/2.be121ff8.chunk.js.map",
+    "static/js/3.53af7b45.chunk.js": "/Cheatsheet/static/js/3.53af7b45.chunk.js",
+    "static/js/3.53af7b45.chunk.js.map": "/Cheatsheet/static/js/3.53af7b45.chunk.js.map",
+    "index.html": "/Cheatsheet/index.html",
+    "static/css/main.55093013.chunk.css.map": "/Cheatsheet/static/css/main.55093013.chunk.css.map",
+    "static/js/2.be121ff8.chunk.js.LICENSE.txt": "/Cheatsheet/static/js/2.be121ff8.chunk.js.LICENSE.txt",
+    "static/media/logo1.1ee031c1.png": "/Cheatsheet/static/media/logo1.1ee031c1.png",
+    "static/media/error.css": "/Cheatsheet/static/media/p404.9b65855e.png",
+    "static/media/buttons.css": "/Cheatsheet/static/media/pixel.0cdf3109.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd7be73b.js",
+    "static/js/2.be121ff8.chunk.js",
+    "static/css/main.55093013.chunk.css",
+    "static/js/main.3ffdacb4.chunk.js"
+  ]
+}
