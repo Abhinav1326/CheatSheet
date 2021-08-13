@@ -1,0 +1,31 @@
+@media (max-width:576px) {
+    .nav_col {
+        height: fit-content;
+        white-space: normal;
+    }
+
+    .col {
+        white-space: normal;
+    }
+
+    .col-10 {
+        position: absolute;
+        top: 476px;
+    }
+
+    .mar {
+        position: static;
+    }
+
+    .card3_container .box {
+        transform: scale(0.5);
+    }
+
+    .card4_sec {
+        transform: scale(0.5);
+    }
+
+    .card_cont5 {
+        transform: scale(0.5);
+    }
+}

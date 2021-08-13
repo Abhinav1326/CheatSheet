@@ -1,0 +1,21 @@
+.iframe_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 100px;
+}
+.iframe_container iframe {
+	transform: scale(0.9);
+}
+
+.iframe_container {
+	min-height: 100vh;
+}
+/* iframe {
+    position: absolute;
+    margin-top: -50px;
+    top: -100px;
+    left: -200px;
+} */
+

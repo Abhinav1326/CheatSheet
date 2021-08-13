@@ -1,0 +1,77 @@
+.cont_design {
+    background: #fff;    
+    border: 1px solid #000;
+    width: 100%;
+    border-radius: .3rem;
+    
+}
+
+
+.cont_design {
+    /* width: 1150px; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cont_design1 {
+	background: #edeeed;
+    height: 50vh;
+}
+
+
+.cont_design1 .drops {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cont_design1 .drops .drop {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background: transparent;
+	border-radius: 57% 43% 37% 63% / 45% 52% 48% 55%;
+	box-shadow: inset 10px 10px 10px rgba(0 ,0, 0, 0.05),
+				15px 25px 10px rgba(0 ,0, 0, 0.1),
+				15px 20px 20px rgba(0, 0, 0, 0.05),
+				inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+}
+
+.cont_design1 .drops .drop::before {
+	content: '';
+	position: absolute;
+	top: 25px;
+	left: 35px;
+	background: #fff;
+	width: 20px;
+	height: 20px;
+	border-radius: 42% 58% 37% 63% / 40% 43% 57% 60%;
+}
+
+.cont_design1 .drops .drop::after {
+	content: '';
+	position: absolute;
+	top: 25px;
+	left: 65px;
+	background: #fff;
+	width: 10px;
+	height: 10px;
+	border-radius: 57% 43% 37% 63% / 48% 37% 63% 52%;
+}
+
+.cont_design1 .drops .drop:nth-child(2) {
+	transform: scale(0.5) translate(-200px, 180px);
+	border-radius: 64% 36% 42% 58% / 42% 37% 63% 58%;
+}
+
+.cont_design1 .drops .drop:nth-child(3) {
+	transform: scale(0.5) translate(280px, 10px);
+	border-radius: 40% 51% 42% 58% / 56% 47% 53% 44%;
+}
+.cont_design1 .drops .drop:nth-child(4) {
+	transform: scale(0.35) translate(120px, -350px);
+	border-radius: 39% 61% 63% 37% / 77% 47% 53% 23%;
+}

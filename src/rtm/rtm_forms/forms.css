@@ -1,0 +1,228 @@
+.cont_form {
+    background: #fff;    
+    border: 1px solid #000;
+    width: 90%;
+    border-radius: .3rem;
+}
+
+
+.cont_form1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #03080a;
+    border-radius: .3rem;
+}
+
+
+.form_container {
+    width: 80%;
+    padding: 20px;
+}
+
+.form_container h2 {
+    width: 100%;
+    color: #45f3ff;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form_container .row100 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.form_container .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+
+.form_container .row100 .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #45f3ff;
+}
+
+.form_container .row100 .inputBox input,
+.form_container .row100 .inputBox.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #fff;
+}
+
+.form_container .row100 .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.form_container .row100 .inputBox input:focus + .text,
+.form_container .row100 .inputBox input:valid + .text {
+    top: -35px;
+    left: -10px;
+}
+
+.form_container .row100 .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.form_container .row100 .inputBox input:focus ~ .line,
+.form_container .row100 .inputBox input:valid ~ .line {
+    height: 100%;
+}
+
+.form_container .row100 .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.form_container .row100 .inputBox.textarea textarea {
+    height: 100%;
+    resize: none;
+}
+
+.form_container .row100 .inputBox textarea:focus + .text,
+.form_container .row100 .inputBox textarea:valid + .text {
+    top: -35px;
+    left: -10px;
+}
+
+.form_container .row100 .inputBox textarea:focus ~ .line,
+.form_container .row100 .inputBox textarea:valid ~ .line {
+    height: 100%;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #45f3ff;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+
+/* ---------------------------------------------- form 2 ---------------------------------------------------- */
+
+
+
+.cont_form2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #131419;
+    border-radius: .3rem;
+}
+
+.form_container2 {
+    padding: 20px;
+}
+
+.form2 {
+	position: relative;
+	width: 350px;
+	padding: 40px 40px 60px;
+	background: #131419;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+				5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form2 h2 {
+	color: #c7c7c7;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.form2 .input {
+	text-align: left;
+	margin-top: 40px;
+}
+
+.form2 .input .inputBox {
+	margin-top: 20px;
+}
+
+.form2 .input .inputBox label {
+	display: block;
+	color: #868686;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+
+.form2 .input .inputBox input {
+	width: 100%;
+	height: 50px;
+	background: #131419;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	padding: 5px 15px;
+	color: #fff;
+	font-size: 18px;
+	color: #03a9f4;
+	box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.05),
+				inset 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.form2 .input .inputBox input[type="submit"] {
+	margin-top: 20px;
+	box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.05),
+				2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.form2 .input .inputBox input[type="submit"]:active {
+	color: #006c9c;
+	margin-top: 20px;
+	box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.05),
+				 inset 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.form2 .input .inputBox input::placeholder {
+	color: #555;
+	font-size: 18px;
+}
+
+.form2 .forget {
+	margin-top: 30px;
+	color: #555;
+}
+
+.form2 .forget a {
+	color: #ff0047;
+}

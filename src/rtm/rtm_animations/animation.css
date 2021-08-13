@@ -1,0 +1,496 @@
+.cont_effects {
+    background: #fff;    
+    border: 0.0625rem solid #000;
+    width: 100%;
+    border-radius: .3rem;
+}
+.cont_effects { 
+    position: relative;
+    background: #edf1f4;
+    /* width: 1150px; */
+    padding: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.loader1 .effectdiv:nth-child(1) {
+    --i:0;
+}
+.loader1 .effectdiv:nth-child(2) {
+    --i:1;
+}
+.loader1 .effectdiv:nth-child(3) {
+    --i:2;
+}
+.loader1 .effectdiv:nth-child(4) {
+    --i:3;
+}
+.loader1 .effectdiv:nth-child(5) {
+    --i:4;
+}
+
+.loader1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.loader1 .effectdiv {
+    position: relative;
+    width: 40px;
+    height: 12.5rem;
+    margin: 1.25rem;
+    border-radius: 40px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05, #edf1f4));
+    border: 2px solid #edf1f4;
+    box-shadow: 15px 15px 1.25rem rgba(0, 0, 0, 0.1), 
+    -15px -15px 1.25rem #fff,
+    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.loader1 .effectdiv::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    border-radius: 40px;
+    box-shadow: 15px 15px 1.25rem rgba(0, 0, 0, 0.1), 
+                -15px -15px 1.25rem #fff,
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.loader1 .effectdiv::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 5px rgba(0, 0, 0, 0.2),
+                0 26.25rem 0 25rem #2196f3;
+    animation: animate 2.5s ease-in-out infinite;
+    transform: translateY(160px);
+    animation-delay: calc(-0.5s * var(--i));
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(160px);
+        filter: hue-rotate(180deg);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(160px);
+        filter: hue-rotate(0deg);
+    }
+
+}
+
+
+/* ----------------------------------------------------- Effect 2 ------------------------------------------------------ */
+
+
+.cont_effects2 {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50vh;
+	background: #000;
+	overflow: hidden;
+}
+.effect_container2 {
+	position: relative;
+	width: 100%;
+	transform: rotate(35deg);
+}
+
+.effect_container2 .effect_box2 {
+	position: relative;
+	left: -12.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(100% + 25rem);
+	height: 12.5rem;
+	-webkit-box-reflect: below 0.0625rem linear-gradient(transparent, #0004);
+	animation: animateSurface2 1.5s ease-in-out infinite;
+}
+
+.effect_container2 .effect_box2 .effect_cube2 {
+	position: relative;
+	width: 12.5rem;
+	height: 12.5rem;
+	background-color: #03e9f4;
+	box-shadow: 0 0 5px rgba(3, 233, 244, 1),
+	0 0 25px rgba(3, 233, 244, 1),
+	0 0 3.125rem rgba(3, 233, 244, 1),
+	0 0 6.25rem rgba(3, 233, 244, 1),
+	0 0 12.5rem rgba(3, 233, 244, 0.5),
+	0 0 18.75rem rgba(3, 233, 244, 0.5);
+	transform-origin: bottom right;
+	animation: effect_animate2 1.5s ease-in-out infinite;
+}
+
+@keyframes animateSurface2 {
+	0% {
+		transform: translateX(0px);
+	}
+	100%{
+		transform: translateX(-12.5rem);
+	}
+}
+
+@keyframes effect_animate2 {
+	0% {
+		transform: rotate(0deg);
+	}
+	60% {
+		transform: rotate(90deg);
+	}
+	65% {
+		transform: rotate(85deg);
+	}
+	70% {
+		transform: rotate(90deg);
+	}
+	75% {
+		transform: rotate(87.5deg);
+	}
+	80%, 100% {
+		transform: rotate(90deg);
+	}
+}
+
+
+/* -------------------------------------------- Effect 3 -------------------------------------------------- */
+
+.cont_effects3 {
+    background: radial-gradient(#2e2e2e, #333);
+}
+.effect_container3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 30vh;
+	background: radial-gradient(#2e2e2e, #333);
+}
+
+.effect_container3 .infinite {
+	position: relative;
+	width: 800px;
+	height: 160px;
+	background: #525252;
+	transform-origin: bottom;
+	transform-style: preserve-3d;
+	transform: perspective(500px) rotateX(30deg);
+}
+
+.effect_container3 .infinite::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 10px;
+	background: linear-gradient(90deg, #fff 0%, #fff 70%, #525252 70%, #525252 100%);
+	background-size: 7.5rem;
+	animation: animateRoad3 1s linear infinite;
+}
+
+.effect_container3 .infinite::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	background: #333;
+	bottom: -30px;
+	transform-origin: top;
+	transform: perspective(500px) rotateX(-25deg);
+}
+
+.effect_container3 .shadow {
+	position: absolute;
+	bottom: -93px;
+	left: 50%;
+	width: 95%;
+	transform: translatex(-50%);
+	height: 60px;
+	background: linear-gradient(rgba(0, 0, 0, 0.25), transparent);
+
+}
+
+.effect_container3 .box {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-box-reflect: below 0.0625rem linear-gradient(transparent, transparent, transparent, #0004);
+	animation: animate_effect_box3 1s linear infinite;
+}
+
+.effect_container3 .box .square {
+	position: relative;
+	width: 6.25rem;
+	height: 6.25rem;
+	background-color: #fff;
+	transform-origin: bottom right;
+	animation: effect_animante3 1s linear infinite;
+}
+
+@keyframes effect_animante3 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(90deg);
+	}
+}
+
+@keyframes animate_effect_box3 {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-6.25rem);
+	}
+	
+}
+
+@keyframes animateRoad3 {
+	0% {
+		background-position: 0;
+	}
+	100% {
+		background-position: -7.5rem;
+	}
+}
+
+
+/* ------------------------------------------------effect 4---------------------------------------------------- */
+
+
+.cont_effects4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50vh;
+	background: #222;
+	overflow: hidden;
+}
+
+.effect_container4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0.55);
+}
+
+.effect_container4 .box {
+	transform-style: preserve-3d;
+	animation: animate_effect4 25s linear infinite;
+}
+
+@keyframes animate_effect4 {
+	0% {
+		transform: perspective(1000px) rotateX(0deg) rotate(45deg);
+	}
+	100% {
+		transform: perspective(1000px) rotateX(360deg) rotate(45deg);
+	}
+}
+
+.effect_container4 .box span:nth-child(1){
+	--effect4:1;
+}
+.effect_container4 .box span:nth-child(2){
+	--effect4:2;
+}
+.effect_container4 .box span:nth-child(3){
+	--effect4:3;
+}
+.effect_container4 .box span:nth-child(4){
+	--effect4:4;
+}
+.effect_container4 .box span:nth-child(5){
+	--effect4:5;
+}
+.effect_container4 .box span:nth-child(6){
+	--effect4:6;
+}
+.effect_container4 .box span:nth-child(7){
+	--effect4:7;
+}
+.effect_container4 .box span:nth-child(8){
+	--effect4:8;
+}
+.effect_container4 .box span:nth-child(9){
+	--effect4:9;
+}
+.effect_container4 .box span:nth-child(10){
+	--effect4:10;
+}
+.effect_container4 .box span:nth-child(11){
+	--effect4:11;
+}
+.effect_container4 .box span:nth-child(12){
+	--effect4:12;
+}
+.effect_container4 .box span:nth-child(13){
+	--effect4:13;
+}
+.effect_container4 .box span:nth-child(14){
+	--effect4:14;
+}
+.effect_container4 .box span:nth-child(15){
+	--effect4:15;
+}
+.effect_container4 .box span:nth-child(16){
+	--effect4:16;
+}
+
+.effect_container4 .box span {
+	position: absolute;
+	color: #fff;
+	font-size: 3.5em;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-weight: 900;
+	padding: 0 10px;
+	background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.5), transparent);
+	line-height: 0.76em;
+	transform-style: preserve-3d;
+	text-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+	transform: translate(-50%, -50%) rotateX(calc(var(--effect4) * 27.6923076923deg)) translateZ(110px)
+}
+
+.effect_container4 .box span i:nth-child(1) {
+	font-style: initial;
+	color: #f16413;
+}
+
+.effect_container4 .box span i:nth-child(2) {
+	font-style: initial;
+	color: #17a00b;
+}
+
+
+/* ------------------------------------------------animation 5---------------------------------------------------- */
+
+.animationSec5 .loader .dot:nth-child(1) {
+	--i_5 : 0;
+}
+.animationSec5 .loader .dot:nth-child(2) {
+	--i_5 : 1;
+}
+.animationSec5 .loader .dot:nth-child(3) {
+	--i_5 : 2;
+}
+.animationSec5 .loader .dot:nth-child(4) {
+	--i_5 : 3;
+}
+.animationSec5 .loader .dot:nth-child(5) {
+	--i_5 : 4;
+}
+.animationSec5 .loader .dot:nth-child(6) {
+	--i_5 : 5;
+}
+.animationSec5 .loader .dot:nth-child(7) {
+	--i_5 : 6;
+}
+.animationSec5 .loader .dot:nth-child(8) {
+	--i_5 : 7;
+}
+.animationSec5 .loader .dot:nth-child(9) {
+	--i_5 : 8;
+}
+.animationSec5 .loader .dot:nth-child(10) {
+	--i_5 : 9;
+}
+
+.cont_effects5 {
+	background: #001300;
+}
+
+.animationSec5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 100%;
+    width: 100%;
+    background: #001300;
+    animation: changeColor_5 5s linear infinite;
+    flex-direction: column;
+}
+
+@keyframes changeColor_5 {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+
+}
+
+.animationSec5 h2 {
+    color: #00ff0a;
+    font-weight: 300;
+    letter-spacing: 10px;
+
+}
+
+.animationSec5 .loader{
+    position: relative;
+    display: flex;
+
+}
+
+.animationSec5 .loader .dot {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #00ff0a;
+    box-shadow: 0 0 10px #00ff0a,
+                0 0 20px #00ff0a,
+                0 0 40px #00ff0a,
+                0 0 60px #00ff0a,
+                0 0 80px #00ff0a,
+                0 0 100px #00ff0a;
+    margin: 20px 10px;
+    transform: scale(0.1);
+    border-radius: 50%;
+    animation: animateDot_5 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i_5));
+}
+
+.animationSec5 .loader:last-child .dot {
+    animation-delay: calc(-0.1s * var(--i_5));
+}
+
+@keyframes animateDot_5 {
+    0%,50%,100% {
+        transform: scale(0.1);
+    }
+    10% {
+        transform: scale(1);
+    }
+    50%,100% {
+        transform: scale(0.1);
+    }
+}
